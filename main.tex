@@ -1,0 +1,451 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Thomas Pham}\\\medskip % Your name
+	% {\Huge\color{headings}\cvtextfont Resume}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Nov 2017 - current} % Duration
+{FT} % FT/PT (full time or part time)
+{ClassCom} % Employer
+{Software Engineer} % Job title
+{Building a RocketChat-based platform to solve classroom communication problem.} % Description
+{\textbf{Technological Stack}: Python, Django, Swift, Javascript, NodeJS, MongdoDB, AWS, Azure Cloud, Google Cloud, Selenium, Chimp, Mochas.}
+{\textbf{Product Traction}: 
+	\begin{itemize}
+	\setlength{\itemsep}{1pt}	
+	  \item The product is accepted into RMIT Activator, an Startup Incubator host by RMIT University.
+	  \item Lecturers use the product at RMIT and Victoria University.
+	  \item Working with RMIT School of Science.
+	  \item The product is being used at British University of Vietnam.  
+	\end{itemize}
+\textbf{Responsibilities}:
+	\begin{itemize}
+	\setlength{\itemsep}{1pt}	
+	  \item Developed and customized and livechat functions with automated tests.
+	  \item Developed mobile applications.
+	  \item Maintained, developed and improved RocketChat core and REST API.
+	  \item Developed integrated applications: Attendance Checker and Feedback system.
+	  \item Deployed and maintained the scalable system on Amazon Web Service, Azure Cloud and Google Cloud Platform.
+	  \item Designed and Developed the Continuous Integration and Deployment.
+	\end{itemize}	
+}
+% {
+% }
+%------------------------------------------------
+
+\workposition{Mar 2017 -- Oct 2017} % Duration
+{PT} % FT/PT (full time or part time)
+{Melbourne Network Society Institute}
+{Software Engineer Intern} % Employer % Job title
+{Solving the problem of facial recognition in security system using various machine learning and signal processing techniques.} 
+{\textbf{Technological Stack}: MATLAB, Machine Learning, Signal Processing.} % Description
+{\textbf{Product Traction}:
+	\begin{itemize}
+		\item The algorithm achieved above 90\% accuracy for many famous dataset such as Extended Yale Database B, Ferret.   
+	\end{itemize}}
+{\textbf{Responsibilities}:
+	\begin{itemize}
+		\setlength{\itemsep}{1pt}	
+		\item Developed, maintained and test facial recognition algorithms which are robust in adversarial situations.
+		\item Scaled the algorithms to perform in fast paced environment.   
+	\end{itemize}}
+%------------------------------------------------
+
+%------------------------------------------------
+
+% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+% %----------------------------------------------------------------------------------------
+% %	REFERENCES
+% %----------------------------------------------------------------------------------------
+
+% \section{References}
+
+%\textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+% %------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+% % 	%------------------------------------------------
+	
+% 	\tableentry{}{\textbf{Mr. Khang Vo}}{spaceafter}
+% 	\tableentry{Position}{Managing Director}{}
+% 	\tableentry{Employer}{\href{https://www.flexidata.vn/}{ClassCom and Flexidata Australia}}{}
+% 	\tableentry{Linkedin}{\href{https://www.linkedin.com/in/khangvo/}{https://www.linkedin.com/in/khangvo/}}{spaceafter}
+% 	\tableentry{Email}{vodkhang@gmail.com}{}
+% 	% \tableentry{Mobile}{+1 (232) 842-3583}{}
+	
+% % 	%------------------------------------------------
+	
+% % 	\tableentry{}{}{} % Creates some additional whitespace between the references
+	
+% % 	%------------------------------------------------
+	
+% % 	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
+% % 	\tableentry{Position}{Scientist (HL1)}{}
+% % 	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
+% % 	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
+% % 	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
+% % 	\tableentry{Mobile}{+1 (201) 632-3901}{}
+	
+% % 	%------------------------------------------------
+	
+% \end{supertabular}
+
+% \medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.16\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & 48 St James Ave, Springvale, Victoria, 3171 \\ % Address
+			\raisebox{-1pt}{\faPhone} & +61 432 925 783 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:phqtuyen@gmail.com}{phqtuyen@gmail.com} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://github.com/phqtuyen}{https://github.com/phqtuyen} \\ % Website
+			% \raisebox{-1pt}{\small\faDesktop} & \href{https://phqtuyen.wixsite.com/algorithms-daily}{https://phqtuyen.wixsite.com/algorithms-daily} \\
+			% \raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/thomas-phamtq}{https://www.linkedin.com/in/thomas-phamtq} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	%------------------------------------------------
+	\education{Mar 2017 -- Dec 2017} % Duration
+	{University of Melbourne}
+	{Master of Information Technology} % Employer % Job title
+	{Computer Science}
+	{Projects:
+		\begin{itemize}
+			\setlength{\itemsep}{1pt}	
+			\item Designed a programming language which supports variables, conditionals, loops, arrays and functions, then implemented its compiler.
+			\item Developed a scalable distributed chat application in Java.   
+			\item Implemented various parallel algorithms to speed up their performance.
+		\end{itemize}}
+	%------------------------------------------------
+	\education{Mar 2015 -- Dec 2014} % Duration
+	{University of Melbourne}
+	{Master of Science} % Employer % Job title
+	{Mathematics and Statistics}
+	{Projects:
+		\begin{itemize}
+			\setlength{\itemsep}{1pt}	
+			\item Developed and tested a mathematical model for cash-flows in insurance context.
+			\item Implemented missing link prediction for large graphs.   
+		\end{itemize}}
+	%------------------------------------------------
+	\education{Mar 2011 -- Dec 2013} % Duration
+	{University of Melbourne}
+	{Bachelor of Science} % Employer % Job title
+	{Mathematics and Statistics}
+	{Projects:
+		\begin{itemize}
+			\setlength{\itemsep}{1pt}	
+			\item Developed an web movie database.   
+		\end{itemize}}
+	%------------------------------------------------
+
+% \end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+% 	%------------------------------------------------
+	
+% 	% \tableentry{}{High proficiency in Java, Python, NodeJS}{spaceafter}
+	
+% 	% %------------------------------------------------
+	
+% 	% \tableentry{}{Strong knowledge of Algorithms and Data Structures.}{spaceafter}
+% 	% \tableentry{}{High proficiency in database design and scalability of relational and non-relational database.}{spaceafter}
+% 	% \tableentry{}{Strong knowledge of mathematical and statistical analysis of data.}{spaceafter}
+	
+% 	% %------------------------------------------------
+	
+% 	% \tableentry{}{High proficiency in Unix shell scripting and command-line.}{spaceafter}
+	
+% 	%------------------------------------------------
+% 	\begin{enumerate}
+% 	\end{enumerate}
+	
+% \end{supertabular}
+
+\begin{itemize}
+	\item High proficiency in \textbf{C++, Java, Python, NodeJS}.
+	\item Strong knowledge of \textbf{Algorithms} and \textbf{Data Structures}.
+	\item High proficiency in database design and scalability of relational and non-relational database.
+	% \item Strong knowledge of mathematical and statistical analysis of data.
+	\item Strong knowledge of \textbf{Object Oriented Design Patterns} and \textbf{Model-View-Controller} Architecture.
+	% \item Strong knowledge of \textbf{REST-API} and \textbf{Scalable System} designs.
+	\item High proficiency in \textbf{Git} toolchains.
+	\item Strong practice of \textbf{Agile} methodologies.
+\end{itemize}	
+%------------------------------------------------------
+
+%------------------------------------------------------
+%------------------------------------------------------
+
+% \section{Interpersonal Skills}
+
+% \begin{itemize}
+% 	\item High proficiency in Self-management and Time-management.
+% 	\item High proficiency in Collaborative Problem Solving.
+% 	\item Effective written and verbal communication skills in English and Vietnamese.
+% \end{itemize}	
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+% \section{Awards}
+
+% % Example \tableentry{} command to add another line:
+
+% %\tableentry{Heading}{Content}{spaceafter}
+
+% % All 3 parameters must be supplied but any can be empty if you don't need them
+% % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+% %------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+% 	%------------------------------------------------
+	
+% 	\tableentry{2015}{\textbf{Faculty of Science Masters Scholarship}}{}
+% 	\tableentry{}{\textit{University of Melbourne}}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	\tableentry{2011}{\textbf{Wyselaskie Scholarship in Logic}}{}
+% 	\tableentry{}{\textit{University of Melbourne}}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% \end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+% \section{Communication Skills}
+
+% % Example \tableentry{} command to add another line:
+
+% %\tableentry{Heading}{Content}{spaceafter}
+
+% % All 3 parameters must be supplied but any can be empty if you don't need them
+% % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+% %------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+% 	%------------------------------------------------
+	
+% 	\tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
+% 	\tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	\tableentry{Posters}{Poster at the Meeting of the American}{}
+% 	\tableentry{}{Physical Society -- 1985}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% \end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+% \section{Skills}
+
+% % Example \longformdescription{} command to add another section:
+
+% %\longformdescription{Heading}{Description}
+
+% %------------------------------------------------
+
+% \longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+
+% \longformdescription{Physical Dexterity}{Manual manipulation of experimental equipment and training within Black Mesa (e.g. the Hazard Course) have contributed to an enjoyment of working with my hands.}
+
+% \longformdescription{Passionate}{I have been interested in theoretical physics such as quantum mechanics and relativity from an early age. My education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental physics research with potential practical applications.}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+% \section{Publications}
+
+% % Example \longformdescription{} command to add another publication:
+
+% %\longformpublication{Reference (format this manually as desired)}
+
+% %------------------------------------------------
+
+% \longformpublication{\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.}
+
+% \longformpublication{Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.}
+
+% %------------------------------------------------
+
+% % As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% % Example \doipublication{} command to add another publication:
+
+% %\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% % All four parameters are required (can be empty though)
+% % A value of "firstauthor" in the third parameter will print the DOI in bold
+% % A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+% %------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
+% 	\doipublication{1986}{10.1139/v86-297}{}{}
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1986}{10.1103/PhysRevA.34.2329}{}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	& \textit{First author publications in} \textbf{bold}\\
+	
+% 	%------------------------------------------------
+	
+% \end{supertabular}
+
+% \medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
